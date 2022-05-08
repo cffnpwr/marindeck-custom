@@ -1,0 +1,21 @@
+.column {
+    width: 100% !important;
+}
+
+@media (min-width: 580px) {
+    .column {
+        width: 75% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .column {
+        width: 350px !important;
+    }
+}
