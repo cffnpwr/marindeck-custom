@@ -70,7 +70,7 @@ const renderCard = (title, domain, linkURL, imgURL, cardType, html) => {
 };
 
 const renderCardFromTweetStatus = (ts, html) => {
-    const card = ts.card;
+    const card = ts.card || (ts.targetTweet ? ts.targetTweet.card : undefined);
     if (card !== undefined && (card.name === 'summary' || card.name === 'summary_large_image' || card.name === 'player')) {
         const value = card.binding_values;
         const cardType = card.name;
