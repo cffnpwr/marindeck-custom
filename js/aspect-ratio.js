@@ -1,7 +1,7 @@
 const aspect = () => {
     const mediaItems = document.getElementsByClassName('js-media-image-link');
     for (const mediaItem of mediaItems) {
-        const imageURL = mediaItem.style.getPropertyValue('background-image').replace(/^url(["']?/, '').replace(/["']?)$/, '');
+        const imageURL = mediaItem.style.getPropertyValue('background-image').replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
         const image = new Image()
         image.src = imageURL;
 
